@@ -13,6 +13,7 @@ class PostsController < ApplicationController
       "created_at" =>["created_at"]
     }
   end
+  end
 
 respond_to do [format]
   format.html
@@ -28,3 +29,5 @@ end
   end
 
 end
+
+
