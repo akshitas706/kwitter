@@ -12,11 +12,12 @@ class PostsController < ApplicationController
       "body" => post ["body"],
       "created_at" =>["created_at"] }
   
-    end
+    
 
-    respond_to do [format]
-    format.html
-    format.json { render : json => posts_json}
+      respond_to do [format]
+      format.html
+      format.json { render : json => posts_json}
+      
     end
   end
 
