@@ -10,15 +10,15 @@ class PostsController < ApplicationController
       "username" => ...,
       "real_name" => ...,
       "body" => post ["body"],
-      "created_at" =>["created_at"]
-    }
-  end
-  end
+      "created_at" =>["created_at"] }
+  
+    end
 
-respond_to do [format]
-  format.html
-  format.json { render : json => posts_json}
-end
+    respond_to do [format]
+    format.html
+    format.json { render : json => posts_json}
+    end
+  end
 
   def create
     post = Post.new
